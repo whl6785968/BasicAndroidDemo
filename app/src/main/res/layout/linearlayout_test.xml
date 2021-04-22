@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--如果按比例划分需要将layout_width or layout_height设置为0
+    android:layout_gravity="bottom" 将控件相对父容器移动到固定位置
+    dp 为像素单位
+    sp 用于字体大小
+    -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#333333"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小于号"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:layout_gravity="center_vertical">
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="小P"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+        </TextView>
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/menu_layout_icon">-->
+<!--            -->
+<!--        </ImageView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#cccccc">
+    </LinearLayout>
+
+
+
+</LinearLayout>

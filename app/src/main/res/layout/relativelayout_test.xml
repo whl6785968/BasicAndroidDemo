@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<!--    android:layout_centerInParent
+        android:layout_alignParentRight
+        android:layout_alignParentLeft
+        android:layout_alignParentTop
+        android:layout_alignParentBottom
+        android:layout_centerHorizontal
+        android:layout_centerVertical-->
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="28sp"
+        android:text="center"
+        android:background="#ff0000"
+        android:layout_centerInParent="true">
+    </TextView>
+
+<!--    1.在参照物的哪一边
+        android:layout_toLeftOf
+        android:layout_toRightOf
+        android:layout_above
+        android:layout_below
+        2.和参照物哪一边线对齐
+        android:layout_alignTop
+        android:layout_alignBottom
+        android:layout_alignRight
+        android:layout_alignLeft-->
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="28sp"
+        android:text="leftUp"
+        android:background="#00ff00"
+        android:layout_above="@id/center"
+        android:layout_toLeftOf="@id/center">
+    </TextView>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textSize="28sp"
+        android:text="leftUp"
+        android:background="#00ff00"
+        android:layout_below="@id/center"
+        android:layout_toRightOf="@id/center">
+    </TextView>
+</RelativeLayout>

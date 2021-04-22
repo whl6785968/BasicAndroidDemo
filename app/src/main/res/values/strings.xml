@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="menu_name">姓名</string>
+    <string name="home">home</string>
+    <string name="message">message</string>
+    <string name="me">me</string>
+    <string-array name="main_menu">
+        <item>飞机票</item>
+        <item>住酒店</item>
+        <item>去旅游</item>
+        <item>周边游</item>
+        <item>买门票</item>
+        <item>火车票</item>
+        <item>汽车票</item>
+        <item>领里程</item>
+    </string-array>
+    
+    <string-array name="second_menu">
+        <item>国际机票</item>
+        <item>签证服务</item>
+        <item>飞机接送</item>
+    </string-array>
+</resources>
